@@ -2,7 +2,7 @@ $(document).ready(function(){
   var timeLimit = 5; // 制限時間(単位：秒)
   var count = 0; // 経過時間
   var score = 0;
-  var getRandomInt = function(min, max){ // min~maxの乱数を発生
+  var getRandomInt = function(min, max){ // min~maxの乱数を返却
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
   var init = function(){ // 物体の初期配置，タイマーの設置等
