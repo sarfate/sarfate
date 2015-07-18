@@ -1,6 +1,7 @@
 #timer {
   position: absolute;
   right: 2.5%;
+  display: none;
 }
 
 #target {
@@ -9,4 +10,5 @@
   height: 50px;
   position: absolute;
   border-radius: 25px;
+  display: none;
 }
