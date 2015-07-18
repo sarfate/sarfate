@@ -40,11 +40,13 @@ $(document).ready(function(){
       $('#timer').css({display: 'none'});
     }*/
     swal({
-      title: "アラートです！",
-	    text: "メッセージがココに入ります",
-      confirmButtonText: '了解！',
+      title: "ゲーム結果",
+	    text: "あなたのスコアは"+score+'点です',
+      confirmButtonText: 'もう一度遊ぶ',
       confirmButtonColor: '#DD6B55'
-	  });
+	  },function(){
+      init();
+    });
   };
 
   // スタートボタンがクリックされたらゲームが開始される  
