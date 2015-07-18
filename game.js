@@ -33,12 +33,20 @@ $(document).ready(function(){
   };
   // 結果をアラートで出力
   var displayResult = function(score){
-    if(window.confirm('ゲーム終了です\nあなたのスコアは' + score + '点です\n\nもう一度遊びますか？')){
+/*    if(window.confirm('ゲーム終了です\nあなたのスコアは' + score + '点です\n\nもう一度遊びますか？')){
       init();
     } else {
       $('#startButton').css({display: 'block'});
       $('#timer').css({display: 'none'});
-    }
+    }*/
+    swal({
+      title: "ゲーム結果",
+	    text: "あなたのスコアは"+score+'点です',
+      confirmButtonText: 'もう一度遊ぶ',
+      confirmButtonColor: '#DD6B55'
+	  },function(){
+      init();
+    });
   };
 
   // スタートボタンがクリックされたらゲームが開始される  
